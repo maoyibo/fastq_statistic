@@ -118,7 +118,7 @@ def plot_df(ax: Axes, x: List[int], data: pd.DataFrame, label="Read1"):
     for i, l in zip(['A', 'G', 'C', 'T', ], ['-', '--', '-.', ':']):
         ax.plot(x, data[i], linestyle=l, label=f"{label} {i}")
     ax.scatter(x, [x*100 for x in data['N']], s=1.2, color='gray',
-               alpha=0.7, linewidths=0.5, label=f"{label} N(%%)")
+               alpha=0.7, linewidths=0.5, label=f"{label} N(‱)")
     ax.plot(x, data['Q20'], linestyle=(
         0, (3, 5, 1, 5, 1, 5)), label=f"{label} Q20")
     ax.plot(x, data['Q30'], linestyle=(

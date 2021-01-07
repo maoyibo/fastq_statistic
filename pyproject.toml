@@ -9,7 +9,7 @@ classifiers = [
 description = ""
 name = "fastq_statistic"
 readme = "README.md"
-version = "0.1.0"
+version = "0.1.1"
 
 [tool.poetry.scripts]
 fastq-statistic = "fastq_statistic.main:app"
