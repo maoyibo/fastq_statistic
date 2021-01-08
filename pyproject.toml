@@ -2,15 +2,15 @@
 authors = ["Mao Yibo <maoyibo@gmail.com>"]
 classifiers = [
   "Operating System :: POSIX :: Linux",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.6",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
 description = ""
+homepage = "https://github.com/maoyibo/fastq_statistic"
+license = "GPL-3.0-or-later"
 name = "fastq_statistic"
 readme = "README.md"
 version = "0.1.2"
-license = "GPL-3.0-or-later"
 
 [tool.poetry.scripts]
 fastq-statistic = "fastq_statistic.main:app"
@@ -18,12 +18,12 @@ fastq-statistic = "fastq_statistic.main:app"
 [tool.poetry.dependencies]
 matplotlib = "^3.3.3"
 numpy = "^1.19.5"
-pandas = "^1.2.0"
-python = "^3.8"
+pandas = "<1.2.0"
+python = "^3.6"
 typer = "^0.3.2"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2.1"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"

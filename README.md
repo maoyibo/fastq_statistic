@@ -3,13 +3,13 @@ Fastq Statistic
 Calculate statistics for Fastq Files.  
 
 # Requirement
-Python: 3.8 or upper  
+Python: 3.6 or upper  
 
 # Install
 Download the release whl file.  
 
 ```bash
-user@linux:~$ python3.8 -m pip install ./fastq_statistic-0.1.1-py3-none-any.whl
+user@linux:~$ python3 -m pip install fastq-statistic
 ```
 
 # Usage
