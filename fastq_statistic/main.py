@@ -37,14 +37,15 @@ def run_statistic(read1: Path, read2: Optional[Path], reserve=False) -> Tuple[pd
     pool.close()
     pool.join()
     read1_df = read1_thread.get()
-    if reserve == True:
-        read1_df.to_csv(read1.with_suffix(".csv"))
     if read2_thread:
         read2_df = read2_thread.get()
-        read2_df.to_csv(read2.with_suffix(".csv"))
     else:
         read2_df = pd.DataFrame(0, index=read1_df.index,
                                 columns=read1_df.columns)
+    if reserve == True:
+        read1_df.to_csv(read1.with_suffix(".csv"))
+        if read2_thread:
+            read2_df.to_csv(read2.with_suffix(".csv"))
     return read1_df, read2_df
 
 
