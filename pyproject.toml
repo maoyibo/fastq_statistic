@@ -2,7 +2,7 @@
 authors = ["Mao Yibo <maoyibo@gmail.com>"]
 classifiers = [
   "Operating System :: POSIX :: Linux",
-  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.8",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
 description = ""
@@ -18,9 +18,9 @@ fastq-statistic = "fastq_statistic.main:app"
 [tool.poetry.dependencies]
 matplotlib = "^3.3.3"
 numpy = "^1.19.5"
-pandas = "<1.2.0"
-python = "^3.6"
+python = "^3.8"
 typer = "^0.3.2"
+pandas = "^1.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"
