@@ -10,17 +10,17 @@ homepage = "https://github.com/maoyibo/fastq_statistic"
 license = "GPL-3.0-or-later"
 name = "fastq_statistic"
 readme = "README.md"
-version = "0.1.5"
+version = "0.1.6"
 
 [tool.poetry.scripts]
-fastq-statistic = "fastq_statistic.main:app"
+fastq-stat = "fastq_statistic.main:app"
 
 [tool.poetry.dependencies]
 matplotlib = "^3.3.3"
 numpy = "^1.19.5"
+pandas = "^1.2.1"
 python = "^3.8"
 typer = "^0.3.2"
-pandas = "^1.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"
