@@ -10,7 +10,7 @@ homepage = "https://github.com/maoyibo/fastq_statistic"
 license = "GPL-3.0-or-later"
 name = "fastq_statistic"
 readme = "README.md"
-version = "0.1.6"
+version = "0.1.7"
 
 [tool.poetry.scripts]
 fastq-stat = "fastq_statistic.main:app"
